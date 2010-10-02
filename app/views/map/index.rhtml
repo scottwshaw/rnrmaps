@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Test
+		</title>
+		<%= GMap.header %>
+		<%= @map.to_html %>
+	</head>
+	<body>
+		<%= @map.div(:width => 600, :height => 400) %>
+	</body>
+</html>
