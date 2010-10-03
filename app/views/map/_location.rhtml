@@ -1,0 +1,10 @@
+<div id="location">
+	<% form_tag('/map', :method => :get) do %>
+		<p>
+			<%= text_field_tag :location, location %>
+		</p>
+		<p>
+			<%= submit_tag "Show" %>
+		</p>
+	<% end %>
+</div>

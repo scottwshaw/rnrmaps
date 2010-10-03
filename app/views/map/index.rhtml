@@ -5,15 +5,6 @@
 	</head>
 	<body onload="initialize()">
 		<%= render :partial => "map_div", :object => @map %>
-		<div id="location_form">
-			<% form_tag('/map', :method => :get) do %>
-				<p>
-					<%= text_field_tag :location, params[:location] %>
-				</p>
-				<p>
-					<%= submit_tag "Show" %>
-				</p>
-			<% end %>
-		</div>
+		<%= render :partial => "location", :object => params[:location] %>
 	</body>
 </html>
