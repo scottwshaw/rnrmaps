@@ -24,6 +24,18 @@
 	</script>
 	</head>
 	<body onload="initialize()">
-		<div id="map_canvas" style="width:600px; height:400px"></div>
+		<div id="<%= @map.container_id %>"  style="width:600px; height:400px">
+			<div id="map_canvas"  style="width:100%; height:100%"></div>
+		</div>
+		<div id="location_form">
+			<% form_tag('/map', :method => :get) do %>
+				<p>
+					<%= text_field_tag :location, params[:location] %>
+				</p>
+				<p>
+					<%= submit_tag "Show" %>
+				</p>
+			<% end %>
+		</div>
 	</body>
 </html>

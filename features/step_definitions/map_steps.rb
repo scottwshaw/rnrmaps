@@ -4,7 +4,7 @@ end
 
 When /^I visit the map page with HaightAshbury as the location$/ do
   visit "/map"
-  fill_in "Location", :with => @haightAshbury
+  fill_in "location", :with => @haightAshbury
   click_button "Show"
 end
 
